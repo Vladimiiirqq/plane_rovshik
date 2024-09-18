@@ -1,6 +1,6 @@
 # Quasar App (tdlist)
 
-A Quasar Project
+A plane_rovshik Project
 
 ## Install the dependencies
 ```bash
