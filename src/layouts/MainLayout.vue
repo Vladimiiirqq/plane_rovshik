@@ -13,7 +13,7 @@
 
         <q-toolbar-title >
           <div class="logo">
-            <img src="~assets\logo3.png" style="width: 10em;"/>
+            <img src="~assets\logo.png" style="width: 10em;"/>
           </div>
         </q-toolbar-title>
 

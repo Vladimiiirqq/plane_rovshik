@@ -9,7 +9,6 @@
     >
       <div class="no_set_pages_text">Выберите вкладку из списка справа...</div>
     </div>
-
     <div
       class="page__header"
       v-if="
