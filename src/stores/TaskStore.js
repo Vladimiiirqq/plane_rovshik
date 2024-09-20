@@ -4,7 +4,6 @@ import { ref } from "vue";
 
 export const useTaskStore = defineStore('taskStore', {
   state: () => ({
-    counters: [0,0,0,0],
     data: [
       {main: JSON.parse(localStorage.getItem("main")) || []},
       {house: JSON.parse(localStorage.getItem("house")) || []},
@@ -18,15 +17,6 @@ export const useTaskStore = defineStore('taskStore', {
     point: ref(""),
     titlePoint: ref(""),
     date: '',
-    // targetsOpen: ref(false),
-    // points: ref([]),
-    // titlePoint: ref(""),
-    // labelBtn: ref(""),
-    // point: ref(""),
-    // now: new Date(),
-    // date: now.toLocaleDateString(),
-    // data: JSON.parse(localStgetItem("main")),
-    
   }),
   actions: {
     sendTrue(e) {
@@ -58,48 +48,6 @@ export const useTaskStore = defineStore('taskStore', {
       this.date = now.toLocaleDateString()
       return date
     }
-
-    // setTasksCounter(val, index) {
-    //   this.counters[index] = val
-    // },
-    
-    // toggleDrawer() {
-    //   targetsOpen.value = !targetsOpen.value;
-    // console.log(key)
-    
-    // },
-    // sendTrue(e) {
-    //   points.value[e].uReady = !points.value[e].uReady
-    //   localStorage.setItem("main", JSON.stringify(points.value));
-    // },
-    
-    // savePoint() {
-    //   if (!point.value) return;
-    //   points.value.push({
-    //     uPoint: point.value,
-    //     uTitle: titlePoint.value,
-    //     uTime: date,
-    //     uReady: ref(false),
-    //   });
-    //   localStorage.setItem("main", JSON.stringify(points.value));
-    //   taskStore.setTasksCounter(points.value.length, 0)
-    
-    //   point.value = "";
-    //   titlePoint.value = "";
-    // },
-    
-    
-    
-    
-    // delPoint(index) {
-    //   points.value.splice(index, 1);
-    //   localStorage.setItem("main", JSON.stringify(points.value));
-    // },
-    // labelB() {
-    //   labelBtn.value =
-    //     targetsOpen.value == false ? "Добавить цель" : "Закрыть меню";
-    //   }
-    
   }
 })
 

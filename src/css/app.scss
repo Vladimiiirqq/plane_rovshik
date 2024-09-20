@@ -1,33 +1,15 @@
-// app global css in SCSS form
-
-body {
-    
+  body {
     display: flex;
     justify-content: center;
     box-sizing: border-box;
     font-size: 16px;
     font-weight: 500;
-}
-
-// стили для лейаута
-.add__newlink {
-  display: flex;
-}
-.icons__dialog {
-  font-size: 40px;
-}
-
-
-.page__layout {
-    display: flex;
   }
   .page__header {
     background: url(src/assets/fon.png) center;
     height: 185px;
     width: cover;
   }
-  
-  
   .page__name {
     padding-left: 10px;
     padding-top: 100px;
@@ -35,7 +17,6 @@ body {
     font-weight: 600;
     color: white;
   }
-  
   .page__body-color{
     height: 50px;
     background-color: #4F58A9;

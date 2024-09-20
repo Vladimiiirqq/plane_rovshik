@@ -13,7 +13,7 @@
 
         <q-toolbar-title >
           <div class="logo">
-            <img src="~assets\logo3.png" style="width: 10em;"/>
+            <img src="~assets\logo.png" style="width: 10em;"/>
           </div>
         </q-toolbar-title>
 
@@ -51,12 +51,14 @@ import MainPage from 'components/MainPage.vue'
 import HousePage from 'components/HousePage.vue'
 import StudyPage from 'components/StudyPage.vue'
 import WorkPage from 'components/WorkPage.vue'
-import {useTaskStore} from "stores/TaskStore";
-const taskStore = useTaskStore()
+import {useTaskStore} from "stores/TaskStore"
 
 defineOptions({
   name: 'MainLayout'
 })
+
+const taskStore = useTaskStore()
+const leftDrawerOpen = ref(false)
 
 function setTaskLink(el, idx) {
   if (el == 'main') {
@@ -80,8 +82,6 @@ function setTaskLink(el, idx) {
     taskStore.targets = taskStore.data[idx].work
   }
 }
-
-const leftDrawerOpen = ref(false)
 
 function toggleLeftDrawer () {
   leftDrawerOpen.value = !leftDrawerOpen.value
