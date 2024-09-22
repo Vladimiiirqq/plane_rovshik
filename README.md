@@ -24,7 +24,7 @@
 
 - Основной **JavaScript**-код хранится в файле _"TaskStore.js"_, который является "Стором", т.е. все переменные и функции из этого файла импортируются во все файлы приложения. Таже JS прописан в низу практически каждого файла с расширением _.vue_
 
-## Install the dependencies
+## Для установки зависимостей
 
 ```bash
 yarn
@@ -32,13 +32,13 @@ yarn
 npm install
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+### Запуск приложения в режиме разработки
 
 ```bash
 quasar dev
 ```
 
-### Lint the files
+### Проверить (lint) все файлы
 
 ```bash
 yarn lint
@@ -46,7 +46,7 @@ yarn lint
 npm run lint
 ```
 
-### Format the files
+### Для того, чтобы отформатировать файлы
 
 ```bash
 yarn format
@@ -54,12 +54,12 @@ yarn format
 npm run format
 ```
 
-### Build the app for production
+### Собрать приложение
 
 ```bash
 quasar build
 ```
 
-### Customize the configuration
+### Для настройки конфигураций
 
 See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
